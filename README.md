@@ -2,6 +2,18 @@
  simplescalar scripts and source code, as well as compiler tools that can be compile on ubuntu20.04
 
 
+## Compilation environment description
+
+Architecture: x86_64
+
+System: Ubuntu 20.04.3 LTS \n \l
+
+Disk space: tools and simulators are about 200MB
+
+CPU: simplescalar itself is a single-threaded simulation, 1~2 is enough, more can speed up the compilation
+
+Memory: Compilation requires 4-5G memory, actual running is no less than 500M
+
 
 ## Code packages 
 
