@@ -33,7 +33,7 @@ gcc_compile(){
 gcc_test(){
 	pushd bin
 	./sslittle-na-sstrix-gcc ../hello.c -o hello
-    popd
+        popd
 }
 simpletools_tar(){
  	mkdir sslittle_tools
@@ -42,15 +42,19 @@ simpletools_tar(){
 }
 simplesim_compile(){
 	tar xf simplesim-3v0e.tgz
-	make config-pisa
+	pushd simplesim-3.0
+ 	make config-pisa
 	make
+        popd
 }
 simplesim_test(){
+        pushd simplesim-3.0
 	./sim-safe tests/bin.little/test-math    
 	./sim-outorder tests/bin.little/test-math 
 	./sim-safe ../sslittle_tools/bin/hello 
+        popd
 }
-
+pre_install
 simpltools_sslittle-na-sstrix_compile
 simpleutils_compile
 gcc_compile
