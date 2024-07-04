@@ -27,9 +27,7 @@ Memory: Compilation requires 4-5G memory, actual running is no less than 500M
 
 ├── simpletools-sslittle-na-sstrix-m.tgz
 
-├── simpleutils-990811-m.tar.gz
-
-└── sslittle_tools.tar.gz
+└──simpleutils-990811-m.tar.gz
 
 
 
